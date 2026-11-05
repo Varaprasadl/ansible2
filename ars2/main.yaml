@@ -1,0 +1,5 @@
+- name: configure 
+  hosts: "{{component}}"
+  become: yes
+  roles: # this will referce the roles in the current directory.
+  - "{{component}}"
