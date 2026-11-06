@@ -13,4 +13,4 @@
     enabled: yes
 
 - name: set root ansible_password
-  command: mysql_secure_installation --set-root-pass {{mysql_password}}
+  command: mysql_secure_installation --set-root-pass {{mysql_root_password}}
