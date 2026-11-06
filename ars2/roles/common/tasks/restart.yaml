@@ -4,6 +4,6 @@
 
 - name: "{{ component }} application restart and enable"
   service:
-    name: "{{ component }}""
+    name: "{{ component }}"
     state: restarted
     enabled: true
