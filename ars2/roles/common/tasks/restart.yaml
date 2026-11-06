@@ -6,4 +6,4 @@
   service:
     name: "{{ component }}"
     state: restarted
-    enabled: true
+    enabled: yes
