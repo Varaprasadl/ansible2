@@ -2,7 +2,7 @@
   systemd_service:
     daemon_reload: true
 
-- name: "{{ component }} application restart and enable"
+- name: application restart and enable
   service:
     name: "{{ component }}"
     state: restarted
