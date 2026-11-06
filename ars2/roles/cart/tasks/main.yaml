@@ -1,0 +1,23 @@
+- name: nodejs app_setup
+  include_role:
+    name: common
+    tasks_from: app_setup
+
+- name: install nodejs
+  include_role:
+    name: common
+    tasks_from: nodejs
+
+- name: configure systemd service
+  include_role:
+    name: common
+    tasks_from: systemd
+
+- name: restart and enable nodejs
+  include_role:
+    name: common
+    tasks_from: restart
+
+  
+
+
